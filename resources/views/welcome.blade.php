@@ -1,18 +1,3 @@
-{{-- <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="h-full">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>FS-Masters - Accueil</title>
-
-    <!-- Fonts -->
-    <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
-
-    <!-- Scripts & CSS -->
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head> --}}
-
 @extends('layouts.app')
 
 @section('content')
@@ -41,14 +26,14 @@
             </div>
 
             <div class="hidden lg:flex lg:gap-x-12 text-xl font-semibold text-gray-900">
-                <a href="#" class="">Accueil</a>
+                <a href="#" class="{{ route('/') }}">Accueil</a>
                 <a href="#" class="">Produits</a>
                 <a href="#" class="">Fournisseurs</a>
                 <a href="#" class="">À propos</a>
             </div>
 
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-                <a href="#" class="text-xl font-semibold text-gray-900">
+                <a href="{{ route('login') }}" class="text-xl font-semibold text-gray-900">
                     Se connecter <span aria-hidden="true">→</span>
                 </a>
             </div>

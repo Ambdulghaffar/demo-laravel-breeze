@@ -2,7 +2,7 @@
     <nav class="flex items-center justify-between p-6 lg:px-8">
         <!-- Logo -->
         <div class="flex lg:flex-1">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="{{ route('/') }}" class="-m-1.5 p-1.5">
                 <span class="sr-only">Gestion Stock Matériaux</span>
                 <img
                     src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
@@ -27,7 +27,7 @@
 
         <!-- Desktop menu -->
         <div class="hidden lg:flex lg:gap-x-12 text-lg font-semibold text-gray-900">
-            <a href="#">Accueil</a>
+            <a href="{{ route('/') }}">Accueil</a>
             <a href="#">Produits</a>
             <a href="#">Fournisseurs</a>
             <a href="#">À propos</a>

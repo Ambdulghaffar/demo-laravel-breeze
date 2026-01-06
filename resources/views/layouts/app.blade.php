@@ -27,6 +27,7 @@
                 </header>
             @endif
 
+            @include('layouts.navbar')
             <!-- Page Content -->
             <main>
                 {{-- {{ $slot }} --}}
